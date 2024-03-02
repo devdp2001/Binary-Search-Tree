@@ -1,0 +1,28 @@
+READ ME
+
+Instructions to run code:
+Make sure you are in the BinaryTree folder
+Type make to compile
+To run
+Type ./main inputfile.txt
+
+
+Extra Methods
+getNumSingleParent:
+Recursively go through all Nodes starting from the root and check if there is only 1 subtree by checking if one side is null and the other side is not null.
+If so, add 1 to the counter and keep going throughout all the Nodes.
+Time Complexity: O(n^2)
+T(n) = 1 + T(n/2), when n > 1
+If a<1 then T(n) = O(n^k) ........ T(n) = O(f(n))
+
+getNumLeafNodes:
+Recursively check each node starting from the root to see if there is a right and left node, if there are none of them, add 1, then recursively go through all other nodes.
+Time Complexity: O(n^2)
+T(n) = 1 + T(n/2), when n > 1
+If a<1 then T(n) = O(n^k) ........ T(n) = O(f(n))
+
+getSumOfSubtrees:
+Find the Node from parameter then recursively keep adding the left and right subtrees until the last node is null.
+Time Complexity: O(n^2)
+T(n) = 1 + T(n/2), when n > 1
+If a<1 then T(n) = O(n^k) ........ T(n) = O(f(n))
